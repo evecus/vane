@@ -28,7 +28,7 @@ jobs:
         run: |
           case "${{ github.event.inputs.arch }}" in
             amd64)
-              echo 'include=[{"name":"linux-amd64","target":"x86_64-unknown-linux-musl","output":"vane-linux-amd64"}]' >> $GITHUB_OUTPUT
+              echo 'include=[{"name":"linux-amd64","target":"x86_64-unknown-linux-gnu","output":"vane-linux-amd64"}]' >> $GITHUB_OUTPUT
               ;;
             arm64)
               echo 'include=[{"name":"linux-arm64","target":"aarch64-unknown-linux-musl","output":"vane-linux-arm64"}]' >> $GITHUB_OUTPUT
